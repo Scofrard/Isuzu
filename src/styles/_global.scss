@@ -56,10 +56,29 @@ h3 {
 }
 
 h4 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 20px;
     color: $isuzu_dark_grey;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 20px;
+    color: $isuzu_dark_grey;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20px;
+    color: $isuzu_dark_grey;
+    letter-spacing: 1px;
+    text-transform: none;
 }
 
 a {
@@ -107,7 +126,30 @@ p {
     cursor: pointer;
 }
 
+.secondary_button {
+    margin: .5rem 0;
+    padding: .5rem 3rem;
+    border-radius: 35px;
+    font-family: $title_font;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 400;
+    color: $isuzu_dark_grey;
+    letter-spacing: 2.2px;
+    line-height: 26px;
+    background-color: $white;
+    border: solid 3px $isuzu_dark_grey;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $isuzu_dark_grey;
+        color: $white;
+        padding-right: 10px;
+        transition: all .3s ease-in-out;
+    }
+}
+
 .container {
     max-width: 100%;
-    padding: 5rem 2rem;
+    padding: 0 2rem;
 }
