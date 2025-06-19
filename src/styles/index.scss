@@ -5,7 +5,8 @@ header {
     max-width: 100%;
     width: 100%;
     padding: 1rem 0;
-    position: static;
+    position: fixed;
+    z-index: 20;
 
     div {
         display: flex;
@@ -25,7 +26,7 @@ header {
     }
 
     .contact_static {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         display: flex;
         align-items: center;
@@ -33,20 +34,21 @@ header {
         width: 100%;
         margin: 0;
         padding: 0;
+        z-index: 20;
 
         .static_first {
             display: inline-block;
             width: 50%;
             background-color: $isuzu_red;
             text-align: center;
-            padding: 1rem;
+            padding: 1.2rem;
         }
 
         .static_second {
             width: 50%;
             background-color: $isuzu_dark_grey;
             text-align: center;
-            padding: 1rem;
+            padding: 1.2rem;
         }
     }
 }
@@ -128,7 +130,7 @@ header {
 .hero {
     background-color: aqua;
     width: 100%;
-    height: calc(100vh - 90px);
+    height: 100vh;
     z-index: 10;
 
     .hero_text {
@@ -139,6 +141,7 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
         color: $white;
+        z-index: 15;
 
         h1 {
             margin-bottom: 1rem;
@@ -150,6 +153,7 @@ header {
         bottom: 10%;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 15;
     }
 
     video {
@@ -164,6 +168,6 @@ header {
         left: 0;
         width: 100%;
         height: calc(100vh - 90px);
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.3);
     }
 }
