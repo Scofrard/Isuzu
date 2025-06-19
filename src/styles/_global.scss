@@ -48,10 +48,10 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 3.6px;
-    line-height: 41px;
+    line-height: 35px;
     color: $isuzu_dark_grey;
 }
 
@@ -85,7 +85,7 @@ span {
 
 p {
     font-family: $text_font;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: $isuzu_dark_grey;
     letter-spacing: 1.6px;
@@ -94,9 +94,10 @@ p {
 
 .primary_button {
     margin: .5rem 0;
-    padding: .3rem 3rem;
+    padding: .5rem 3rem;
     border-radius: 35px;
     font-family: $title_font;
+    text-align: center;
     font-size: .9rem;
     font-weight: 300;
     color: $white;
@@ -104,4 +105,9 @@ p {
     line-height: 26px;
     background-color: $isuzu_red;
     cursor: pointer;
+}
+
+.container {
+    max-width: 100%;
+    padding: 5rem 2rem;
 }
