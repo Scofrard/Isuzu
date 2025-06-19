@@ -10,16 +10,41 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/global.css">
     <link rel="stylesheet" href="dist/index.css">
     <title>Isuzu</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Isuzu</h1>
-        <p>Test</p>
-    </div>
-
+    <header>
+        <div>
+            <img src="src/assets/img/vectors/Logo-Isuzu.svg" alt="Logo Isuzu">
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close"><img src="src/assets/img/vectors/close-navbar.svg"
+                        alt="close"></a>
+                <ul>
+                    <span>AUTOHAUS MUSTERMANN, MUSTERSTARF</span>
+                    <li><a href="#">Startseite</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">D-MAX</a></li>
+                    <li><a href="#">N-SERIES</a></li>
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Fotogalerie</a></li>
+                    <a href="#" class="primary_button">Probefahrt</a>
+                </ul>
+            </div>
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </div>
+        <span>AUTOHAUS MUSTERMANN, MUSTERSTARF</span>
+    </header>
 </body>
 
 </html>
+
+<script src="src/scripts/index.js"></script>

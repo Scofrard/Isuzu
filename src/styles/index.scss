@@ -1,0 +1,78 @@
+@import './global';
+
+header {
+    background-color: $isuzu_grey_nav;
+    max-width: 100%;
+    width: 100%;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: $white;
+    margin: 8px 0;
+}
+
+.sidenav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -100%;
+    background-color: $white;
+    transition: right 0.5s ease;
+
+    .close {
+        padding: 1rem;
+    }
+
+    ul {
+        margin: 3rem 0;
+
+        span {
+            display: block;
+            margin: 2rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $isuzu_dark_grey;
+            line-height: 30px;
+        }
+
+        li {
+            a {
+                padding: .5rem .5rem .5rem 2rem;
+                text-align: left;
+                text-decoration: none;
+                font-size: 1.2rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $isuzu_dark_grey;
+                display: block;
+                transition: 0.2s;
+            }
+        }
+
+        >a:last-of-type {
+            display: inline-block;
+            margin: 2rem;
+        }
+    }
+}
+
+.sidenav.active {
+    right: 0;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
