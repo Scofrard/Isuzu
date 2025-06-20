@@ -36,19 +36,28 @@ header {
         padding: 0;
         z-index: 20;
 
-        .static_first {
-            display: inline-block;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 50%;
-            background-color: $isuzu_red;
-            text-align: center;
             padding: 1.2rem;
+            font-weight: bold;
+            gap: 8px;
+        }
+
+        .static_first {
+            background-color: $isuzu_red;
         }
 
         .static_second {
-            width: 50%;
             background-color: $isuzu_dark_grey;
-            text-align: center;
-            padding: 1.2rem;
+        }
+
+        img {
+            width: 1.5rem;
+            height: auto;
+            margin: 0;
         }
     }
 }
@@ -336,10 +345,15 @@ header {
     }
 
     .contact_map {
-        padding: 1rem;
+        padding: .5rem;
 
         .contact_map_title {
             padding: 1rem 1rem;
+        }
+
+        p {
+            border: solid 1px $isuzu_red;
+            padding: 1rem;
         }
 
         .contact_btn {
@@ -383,6 +397,13 @@ header {
             margin: 3rem 0;
         }
 
+        div {
+            img {
+                width: 2.5rem;
+                height: auto;
+            }
+        }
+
         p {
             margin-top: .5rem;
             font-weight: 600;
@@ -396,9 +417,9 @@ header {
         gap: .5rem;
 
         img {
-            width: 16px;
+            width: 2rem;
             height: auto;
-            padding: .5rem;
+            padding: 1rem .2rem;
         }
 
         .notice_text {
