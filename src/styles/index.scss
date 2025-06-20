@@ -270,24 +270,86 @@ header {
     gap: 1rem;
 
     div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-
-        a {
-            color: $isuzu_red;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 600;
+        span {
+            display: block;
+            margin-bottom: 1rem;
         }
 
-        img {
-            width: 35px;
-            height: auto;
+        div {
+            a {
+                color: $isuzu_red;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            img {
+                display: block;
+                width: 35px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            .primary_button {
+                display: none;
+            }
+
+            .secondary_button {
+                display: none;
+            }
         }
     }
 }
+
+
+@media (min-width: 800px) {
+    .uber {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        padding: 15rem 2rem;
+
+        .uber_title {
+            max-width: 400px;
+        }
+
+        .uber_text {
+            max-width: 800px;
+
+            .uber_cta {
+                display: flex;
+                gap: 2rem;
+                margin-top: 1rem;
+
+                a {
+                    display: none;
+                }
+
+                img {
+                    display: none;
+                }
+
+                .primary_button {
+                    display: block;
+                    color: $white;
+                }
+
+                .secondary_button {
+                    display: block;
+                    color: $isuzu_dark_grey;
+
+                    &:hover {
+                        display: block;
+                        color: $white;
+                        padding: .5rem 3rem;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 .text_img {
     max-width: 100%;
@@ -327,6 +389,55 @@ header {
             h3 {
                 text-align: center;
                 padding: 0 2rem 2rem 2rem;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .text_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        div {
+            .main_img {
+                width: 100%;
+                height: 750px;
+                object-fit: cover;
+            }
+
+            .mask_img {
+                display: block;
+                transform: rotate(0deg);
+                transform-origin: center;
+                position: absolute;
+                top: 0;
+                right: -10px;
+            }
+        }
+
+        .funktion {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 50%;
+            margin-right: 2rem;
+
+            div {
+                h3 {
+                    text-align: left;
+                    padding: 0 0 2rem 0;
+                }
+
+                .primary_button {
+                    display: block;
+                    max-width: 240px;
+                    width: 100%;
+                    margin-top: 2rem;
+                }
             }
         }
     }
