@@ -472,25 +472,34 @@ header {
         justify-content: space-between;
         gap: 1rem;
 
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 80px;
-            border: 1px solid $isuzu_light_grey;
-            border-radius: 10px;
-
-            &:nth-child(2) {
-                border: 1px solid $isuzu_red;
+        .cab {
+            h5 {
+                display: none;
             }
 
-            img {
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: cover;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                height: 80px;
+                border: 1px solid $isuzu_light_grey;
+                border-radius: 10px;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
             }
         }
+
+        .main_car {
+            a {
+                border: 1px solid $isuzu_red;
+            }
+        }
+
     }
 
     .car_model {
@@ -522,18 +531,35 @@ header {
             display: flex;
             align-items: flex-start;
 
-            a {
-                border: none;
-                max-width: 260px;
-                width: 100%;
-                height: auto;
-
-                img {
+            .cab {
+                h5 {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 3rem;
                     opacity: .5;
+                    text-transform: uppercase;
+                    font-weight: 600;
                 }
 
+                a {
+                    border: none;
+                    max-width: 260px;
+                    width: 100%;
+                    height: auto;
 
-                &:nth-child(2) {
+                    img {
+                        opacity: .5;
+                    }
+                }
+            }
+
+            .main_car {
+                h5 {
+                    opacity: 1;
+                    color: $isuzu_red;
+                }
+
+                a {
                     border: none;
                     max-width: 470px;
                     width: 100%;
@@ -544,6 +570,7 @@ header {
                     }
                 }
             }
+
         }
 
         .car_model {
