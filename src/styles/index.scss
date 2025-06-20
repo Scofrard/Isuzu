@@ -232,6 +232,12 @@ header {
                         text-align: right;
                         color: $white;
                         padding: .5rem;
+
+                        &:hover {
+                            color: $isuzu_red;
+                            scale: 1.2;
+                            transition: all 0.2s ease-in-out;
+                        }
                     }
                 }
             }
